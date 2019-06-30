@@ -1,0 +1,62 @@
+﻿extends layout
+
+block navbar
+
+    h6.site-heading.text-center.text-primary.d-none.d-lg-block
+      span.site-heading-lower.text-white SNAIL TOYS
+      span.site-heading-upper Hayallerin Oyuncakçısı
+ 
+  
+    nav#mainNav.navbar.navbar-expand-lg.navbar-dark.py-lg-4
+      .container
+        a.navbar-brand.text-uppercase.text-expanded.font-weight-bold.d-lg-none(href='#') Start Bootstrap
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.mx-auto
+            li.nav-item.active.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/')
+                | Anasayfa
+                span.sr-only (current)
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/about') Hakkımızda
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/products') ÜRÜNLERİMİZ
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/contact') İLETİŞİM
+              
+block content
+   section.page-section.cta
+      .container
+        .row
+          .col-xl-9.mx-auto
+            .cta-inner.text-center.rounded
+              h2.section-heading.mb-5
+                span.section-heading-upper İLETİŞİM BİLGİLERİ
+            
+
+             
+              ul.list-unstyled.list-hours.mb-5.text-left.mx-auto
+                li.list-unstyled-item.list-hours-item.d-flex
+                  | E-mail
+                  span.ml-auto snail@gmail.com
+                li.list-unstyled-item.list-hours-item.d-flex
+                  | Telefon
+                  span.ml-auto +90 212 653 56 13
+                li.list-unstyled-item.list-hours-item.d-flex
+                  | Faks
+                  span.ml-auto 0044(161)9998888
+                li.list-unstyled-item.list-hours-item.d-flex
+                  | Adres
+                  span.ml-auto   Beşiktaş/İstanbul
+                li.list-unstyled-item.list-hours-item.d-flex
+                  | Çalışma Saatleri
+                  span.ml-auto 7:00 AM to 8:00 PM
+                  
+   
+block footer
+    footer.footer.text-faded.text-center.py-5
+      .container
+        p.m-0.small Copyright © Your Website 2019
+              script(src='vendor/jquery/jquery.min.js')
+              script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')

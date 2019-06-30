@@ -1,0 +1,47 @@
+﻿extends layout
+
+block navbar
+
+    h6.site-heading.text-center.text-primary.d-none.d-lg-block
+      span.site-heading-lower.text-white SNAIL TOYS
+      span.site-heading-upper Hayallerin Oyuncakçısı
+ 
+  
+    nav#mainNav.navbar.navbar-expand-lg.navbar-dark.py-lg-4
+      .container
+        a.navbar-brand.text-uppercase.text-expanded.font-weight-bold.d-lg-none(href='#') Start Bootstrap
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.mx-auto
+            li.nav-item.active.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/')
+                | Anasayfa
+                span.sr-only (current)
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/about') Hakkımızda
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/products') ÜRÜNLERİMİZ
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/contact') İLETİŞİM
+              
+block content
+    section.page-section.about-heading
+      .container
+        img.img-fluid.rounded.about-heading-img.mb-3.mb-lg-0(src='img/about.jpg', alt='')
+        .about-heading-content
+          .row
+            .col-xl-9.col-lg-10.mx-auto
+              .bg-faded.rounded.p-5
+                h2.section-heading.mb-4
+                  span.section-heading-upper Güçlü Hayaller,Güçlü Çocuklar
+                  span.section-heading-lower Hakkımızda
+                p Sektöründe her zaman yeniliklerin ve ilklerin güvenilir markası olmak için, sürekli gelişmeyi ve büyümeyi; dünya oyuncak sektörünü yakından takip ederek çocukların duygusal ve fiziksel gelişimini destekleyici, kaliteli ve sağlıklı ürünlerin müşterilerimize ulaşmasını sağlamayı ilke edindik.
+                p.mb-0
+                  |1996 yılında Walt Disney’e ait oyuncak ve hediyelik eşyaların lisans haklarını alarak, Walt Disney’in birbirinden renkli karakterlerini Türkiye’de sevenleri ile buluşturduk. Walt Disney lisansına, Warner Bros. lisansları başta olmak üzere, Pembe Panter, Snoopy ve Hello Kitty gibi daha birçok ünlü lisansı dahil ederek, Sunman Oyuncak’ın gücüne güç katmaya devam ettik.
+block footer
+    footer.footer.text-faded.text-center.py-5
+      .container
+        p.m-0.small Copyright © Your Website 2019
+              script(src='vendor/jquery/jquery.min.js')
+              script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')

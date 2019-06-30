@@ -1,0 +1,77 @@
+﻿extends layout
+
+block navbar
+
+    h6.site-heading.text-center.text-primary.d-none.d-lg-block
+      span.site-heading-lower.text-white SNAIL TOYS
+      span.site-heading-upper Hayallerin Oyuncakçısı
+ 
+  
+    nav#mainNav.navbar.navbar-expand-lg.navbar-dark.py-lg-4
+      .container
+        a.navbar-brand.text-uppercase.text-expanded.font-weight-bold.d-lg-none(href='#') Start Bootstrap
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.mx-auto
+            li.nav-item.active.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/')
+                | Anasayfa
+                span.sr-only (current)
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/about') Hakkımızda
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/products') ÜRÜNLERİMİZ
+            li.nav-item.px-lg-4
+              a.nav-link.text-uppercase.text-expanded(href='/contact') İLETİŞİM
+              
+block content
+    section.page-section
+      .container
+        .product-item
+          .product-item-title.d-flex
+            .bg-faded.p-5.d-flex.ml-auto.rounded
+              h2.section-heading.mb-0
+                span.section-heading-upper Erkek Oyuncakları
+                span.section-heading-lower Super Heroes Batman
+          img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='img/products-01.jpg', alt='')
+          .product-item-description.d-flex.mr-auto
+            .bg-faded.p-5.rounded
+              p.mb-0
+                | Batman’in Motosikleti ile Talon Assassins’in peşine düş!LEGO DC Süper Kahramanlar 76110 Batman: Pençelerin Saldırısı için hazırlan!Batman ve Ace Bat-Hound ile Talon Assassins’i takip et.Yarasa silahlarını Batman’in Motosikletine tak ve hızla aksiyona gir.
+    section.page-section
+      .container
+        .product-item
+          .product-item-title.d-flex
+            .bg-faded.p-5.d-flex.mr-auto.rounded
+              h2.section-heading.mb-0
+                span.section-heading-upper Eğlence Oyuncaklar
+                span.section-heading-lower Tak Oyna Site Oyun Seti 92 Parça
+          img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='img/products-02.jpg', alt='')
+          .product-item-description.d-flex.ml-auto
+            .bg-faded.p-5.rounded
+              p.mb-0
+                | Çocuğunuzun hayal gücünü geliştirir.Şekilleri eşleştirerek zeka becerisini arttırır.El ve göz koordinasyonunu sağlar.Her sette belirlenen konsept ile koleksiyonu oluşturabilir ve bir sürü değişik kompozisyon yapabilirsin.Her şey senin elinde!Ürün materyali plastiktir.
+    section.page-section
+      .container
+        .product-item
+          .product-item-title.d-flex
+            .bg-faded.p-5.d-flex.ml-auto.rounded
+              h2.section-heading.mb-0
+                span.section-heading-upper Kız Oyuncakları
+                span.section-heading-lower My Sweet Home Işıklı ve Sesli Oyun Seti
+          img.product-item-img.mx-auto.d-flex.rounded.img-fluid.mb-3.mb-lg-0(src='img/products-03.jpg', alt='')
+          .product-item-description.d-flex.mr-auto
+            .bg-faded.p-5.rounded
+              p.mb-0
+                | My Sweet Home'un interaktif ve sevimli dünyasına hoş geldiniz.Işıklı ve sesli sevimli ev ile etkileşimde bulunduğunuzda eğlenceli sesler ile karşılanacaksınız.Oğlan ve kız figürleri, bu evin içinde neler olduğunu keşfederken eğlenceyi daha da arttırıyor.
+              
+              .intro-button.mx-auto
+              a.btn.btn-primary.btn-xl(href='/urunler') Daha Fazla Oyuncak
+
+block footer
+    footer.footer.text-faded.text-center.py-5
+      .container
+        p.m-0.small Copyright © Your Website 2019
+              script(src='vendor/jquery/jquery.min.js')
+              script(src='vendor/bootstrap/js/bootstrap.bundle.min.js')
